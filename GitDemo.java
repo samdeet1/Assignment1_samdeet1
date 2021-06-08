@@ -1,5 +1,5 @@
 /*****
- * Edit this line to have your name.
+* Samdeet Khan
  ******/
 public class GitDemo {
     
@@ -18,25 +18,35 @@ public class GitDemo {
     *****/
     public double addNumber(double num) {
         System.out.print("Add num to previousNumber");
-        return 0;
+        previousNumber += num;
+        return previousNumber;
     }
     
-    /*****
-     * This function should calculate the factorial of 'num' and return the resulting value.
-     * i.e. if num = 4,
-     *      the function will return the value of (1 * 2 * 3 * 4)
-     *
-     * @param - description of passed in arguments go here
-     * @return - description of return value goes here
-     *****/
-    public void templateFunction(int num) {
-        
-        double factorialNumber = 0;
-        
-        while( num != 0) {
-            factorialNumber = factorialNumber * 10 + temp;
-            num /= 10;
+  /*****
+  * All the code that was in main goes into this function
+  *
+  * @param num - A number to serve as the size of the for loop
+  * @return 'newNumber'
+  *******/
+  public double function1(int num) {
+        for (int i = 1; i <= num; i++) {
+            newNumber = newNumber * i;
         }
-        
-    }
+        return newNumber;
+  }
+  
+  /**
+  * all the code that was added in branch 2 goes in this function
+  */
+  
+  public double function2(int num) {
+         double factorialNumber = 0;
+         while ( num != 0 ) {
+           double temp = num %10;
+           factorialNumber = factorialNumber * 10 + temp;
+           num /= 10;
+         }
+    return factorialNumber;
+  }
+   
 }
