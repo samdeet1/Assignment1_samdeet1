@@ -23,8 +23,9 @@ public class GitDemo {
     }
     
     /*****
-     * Description of function goes here
-     *
+     * This function should reverse 'num' and return the resulting value. 
+     * i.e. if num = 1234
+     *      the function will return 4321
      * @param - description of passed in arguments go here
      * @return - description of return value goes here
      *****/
